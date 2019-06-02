@@ -34,3 +34,18 @@ internal protocol DelegateB : AnyObject {
   (protocol range=[main.swift:1:1 - line:1:28] "DelegateA" <Self : DelegateA> interface type='DelegateA.Protocol' access=internal non-resilient requirement signature=<Self where Self : AnyObject> inherits: AnyObject)
   (protocol range=[main.swift:3:1 - line:3:32] "DelegateB" <Self : DelegateB> interface type='DelegateB.Protocol' access=internal non-resilient requirement signature=<Self where Self : AnyObject> inherits: AnyObject))
 ```
+
+## Build swift
+
+build for tests
+
+```bash
+$ cd swift
+$ utils/build-script --release-debuginfo
+```
+
+build for debug in Xcode
+
+```bash
+$ utils/build-script --release-debuginfo --xcode
+```
